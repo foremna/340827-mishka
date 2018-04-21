@@ -8,77 +8,89 @@
   <body class="page-catalog">
 
     <header class="page-header">
-      <a href="#" class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logo-mobile.svg">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Вязание на заказ</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Поиск по сайту</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="page-header__wrapper wrapper">
+        <a href="index.html" class="page-header__logo">
+          <img class="page-header__logo-image" src="img/logo-mobile.svg">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <div class="main-nav__wrapper wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a href="catalog.html">Каталог товаров</a>
+              </li>
+              <li class="site-list__item">
+                <a href="form.html">Вязание на заказ</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#">Поиск по сайту</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#">Корзина: пока пуста</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main class="page-main-catalog">
 
       <section class="catalog-items">
-        <div class="catalog-items__wrapper">
-          <h2 class="catalog-items__catalogs">Каталог товаров</h2>
+        <div class="catalog-items__wrapper wrapper">
+          <div class="catalog-items__cat-items">
+            <h2 class="catalog-items__catalogs">Каталог товаров</h2>
+          </div>
         </div>
       </section>
 
       <section class="catalog-item">
-        <div class="catalog-item__wrapper">
-          <div class="catalog-item__block-item item-block">
-            <img src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик" class="item-block__image-item">
-            <p class="item-block__item-desc">Зайчик-попрыгайчик</p>
-            <span class="item-block__item-parameter">Рост 30 см, вес 200 г</span>
-            <b class="item-block__price-item">1 200 руб.</b>
-          </div>
-          <div class="catalog-item__block-item item-block">
-            <img src="http://placehold.it/260x195" alt="Корзинка для белья" class="item-block__image-item">
-            <p class="item-block__item-desc">Корзинка для белья</p>
-            <span class="item-block__item-parameter">Диаметр 15 см, высота 10 см</span>
-            <b class="item-block__price-item">690 руб.</b>
-          </div>
-          <div class="catalog-item__block-item item-block">
-            <img src="http://placehold.it/260x195" alt="Большая корзинка для игрушек" class="item-block__image-item">
-            <p class="item-block__item-desc">Большая корзинка для игрушек</p>
-            <span class="item-block__item-parameter">Диаметр 30 см, высота 30 см</span>
-            <b class="item-block__price-item">1 500 руб.</b>
+        <div class="catalog-item__wrapper wrapper">
+          <div class="catalog-item__cat">
+            <div class="catalog-item__block-item item-block">
+              <img src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик" class="item-block__image-item">
+              <p class="item-block__item-desc">Зайчик-попрыгайчик</p>
+              <span class="item-block__item-parameter">Рост 30 см, вес 200 г</span>
+              <b class="item-block__price-item">1 200 руб.</b>
+            </div>
+            <div class="catalog-item__block-item item-block">
+              <img src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья" class="item-block__image-item">
+              <p class="item-block__item-desc">Корзинка для белья</p>
+              <span class="item-block__item-parameter">Диаметр 15 см, высота 10 см</span>
+              <b class="item-block__price-item">690 руб.</b>
+            </div>
+            <div class="catalog-item__block-item item-block">
+              <img src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек" class="item-block__image-item">
+              <p class="item-block__item-desc">Большая корзинка для игрушек</p>
+              <span class="item-block__item-parameter">Диаметр 30 см, высота 30 см</span>
+              <b class="item-block__price-item">1 500 руб.</b>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="manufacturing">
-        <p class="manufacturing__process">Процесс производства</p>
-        <video src="#" controls="" width="260" height="150" poster="#" class="manufacturing__video-production"></video>
-        <span class="manufacturing__follower">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</span>
-        <button class="manufacturing__order-button button" type="button">Сделать заказ</button>
+        <div class="manufacturing__wrapper wrapper">
+          <div class="manufacturing__man">
+            <p class="manufacturing__process">Процесс производства</p>
+            <video src="#" controls="" width="260" height="150" poster="img/video-mobile@1x.jpg" class="manufacturing__video-production"></video>
+            <span class="manufacturing__follower">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</span>
+            <button class="manufacturing__order-button button" type="button">Сделать заказ</button>
+          </div>
+        </div>
       </section>
 
       <footer class="footers">
-        <div class="footers__wrapper">
-          <div class="social-icon-network  footers__social-icon-network">
-            <a href="#" class="social-icon-network__social-icons social-icon">instagram</a>
-            <a href="#" class="social-icon-network__social-icons social-icon">facebook</a>
-            <a href="#" class="social-icon-network__social-icons social-icon">twitter</a>
+        <div class="footers__wrapper wrapper">
+          <div class="footers__footer">
+            <div class="social-icon-network  footers__social-icon-network">
+              <a href="#" class="social-icon-network__social-icons social-icon">instagram</a>
+              <a href="#" class="social-icon-network__social-icons social-icon">facebook</a>
+              <a href="#" class="social-icon-network__social-icons social-icon">twitter</a>
+            </div>
+            <p class="footers__develop">Разработано</p>
+            <img src="#" alt="Логотип HtmlAcademy" class="footers__htmlacademy-logo">
           </div>
-          <p class="footers__develop">Разработано</p>
-          <img src="#" alt="Логотип HtmlAcademy" class="footers__htmlacademy-logo">
         </div>
       </footer>
 
@@ -86,12 +98,12 @@
         <div class="modal__appends append">
           <h2 class="append__append-to-basket">Добавить в корзину</h2>
           <p class="append__sizes">Выберите размер:</p>
-          <label for="size-s">s</label>
-          <input type="radio" name="size-s" id="size-s">
-          <label for="size-m">m</label>
-          <input type="radio" name="size-m" id="size-m">
-          <label for="size-l">l</label>
-          <input type="radio" name="size-l" id="size-l">
+          <label class="" for="size-s">s</label>
+          <input class="append__input-sizes" type="radio" name="size-s" id="size-s">
+          <label class="append__label-sizes" for="size-m">m</label>
+          <input class="append__input-sizes" type="radio" name="size-m" id="size-m">
+          <label class="append__label-sizes" for="size-l">l</label>
+          <input class="append__input-sizes" type="radio" name="size-l" id="size-l">
           <button class="modal__append button-append" type="button">Добавить</button>
         </div>
       </section>
