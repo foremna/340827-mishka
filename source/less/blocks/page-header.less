@@ -1,3 +1,24 @@
+.page-header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .page-header__logo {
+  display: flex;
+  min-height: 80px;
   padding: 0 110px;
+  border-bottom: 1px solid @gray;
+}
+
+.page-header__delivery {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__logo {
+    order: -2;
+    padding-left: 48px;
+    width: 370px;
+    height: 88px;
+  }
 }

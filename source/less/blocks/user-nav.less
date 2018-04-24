@@ -1,12 +1,12 @@
-.main-nav {
+.user-nav {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-.main-nav .main-nav__item:last-child {
+.user-nav .user-nav__item:last-child {
   border-bottom: 1px solid @gray;
 }
-.main-nav__link {
+.user-nav__link {
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
@@ -14,19 +14,15 @@
   color: #000000;
 }
 
-.main-nav__item {
+.user-nav__item {
   padding: 27px 45px;
   border-bottom: 1px solid @gray;
 }
 
 @media (min-width: @tablet-width) {
-  .main-nav {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+  .user-nav {
+    order: -1;
+    flex-grow: 1;
     display: flex;
-    padding-left: 48px;
-    box-sizing: border-box;
-    background: 0 0;
   }
 }

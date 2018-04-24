@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -12,25 +13,35 @@
         <a href="#" class="page-header__logo">
           <img class="page-header__logo-image" src="img/logo-mobile.svg">
         </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <div class="main-nav__wrapper wrapper">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a href="catalog.html">Каталог товаров</a>
-              </li>
-              <li class="site-list__item">
-                <a href="form.html">Вязание на заказ</a>
-              </li>
-              <li class="site-list__item">
-                <a href="#">Поиск по сайту</a>
-              </li>
-              <li class="site-list__item">
-                <a href="#">Корзина: пока пуста</a>
-              </li>
-            </ul>
+          <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <ul class="main-nav main-nav--closed main-nav--no-js">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+            </li>
+              <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="user-nav user-nav--closed user-nav--no-js">
+            <li class="user-nav__item user-nav__item--search">
+              <a class="user-nav__link" href="#">Поиск по сайту</a>
+            </li>
+            <li class="user-nav__item user-nav__item--basket">
+              <a class="user-nav__link" href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+          <ul class="extra-nav">
+            <li class="extra-nav__item"><a class="extra-nav__link" href="#">Новые поступления</a></li>
+            <li class="extra-nav__item"><a class="extra-nav__link" href="#">Распродажа</a></li>
+          </ul>
+          <p class="page-header__delivery">Бесплатная доставка по России</p>
+          <h2 class="offers-handmade offers-handmade--index">Милые штуки <br>ручной<br> работы для дома</h2>
+          <div class="production__interiors interior">
+            <p class="interior__subject">Предметы интерьера</p>
           </div>
-        </nav>
+          <div class="production__toys toy">
+            <p class="toy__children">Детские игрушки</p>
+          </div>
       </div>
     </header>
 
@@ -38,15 +49,7 @@
 
       <section class="offers">
         <div class="offers__wrapper wrapper">
-          <h2 class="offers__handmade">Милые штуки <br>ручной<br> работы для дома</h2>
-          <div class="offers__productions production">
-            <div class="production__interiors interior">
-              <p class="interior__subject">Предметы интерьера</p>
-            </div>
-            <div class="production__toys toy">
-              <p class="toy__children">Детские игрушки</p>
-            </div>
-          </div>
+
         </div>
       </section>
 
@@ -114,7 +117,7 @@
             <span class="comments__author-social">@misssssiskras</span>
             <div class="comments__botton buttons-toggle">
               <button class="buttons-toggle__comment-toggle-prev"><span class="visually-hidden">Предыдущий отзыв</span></button>
-              <button class="buttons-toggle__comment-toggle-next"><span class="visually-hidden">Следующий отзыв<</span></button>
+              <button class="buttons-toggle__comment-toggle-next"><span class="visually-hidden">Следующий отзыв</span></button>
             </div>
             <button class="comments__writes-button button" type="button">Написать</button>
           </div>
