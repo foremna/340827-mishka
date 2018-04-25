@@ -1,9 +1,6 @@
 .offers-handmade {
   margin: 0;
-  font-size: 27px;
-  line-height: 30px;
-  font-weight: bold;
-  color: #000000;
+  .font(27px, 30px, bold, #000000);
   padding-top: 65px;
   padding-bottom: 90px;
   text-align: center;
@@ -18,4 +15,16 @@
   padding-left: 38px;
   padding-right: 38px;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .offers-handmade {
+    width: 100%;
+    .font(43px, 50px, bold, #000000);
+    padding-top: 100px;
+    padding-bottom: 368px;
+  }
+  .offers-handmade br {
+    display: none;
+  }
 }

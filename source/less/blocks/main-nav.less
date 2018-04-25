@@ -7,11 +7,9 @@
   border-bottom: 1px solid @gray;
 }
 .main-nav__link {
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: bold;
+  display: block;
+  .font(17px, 24px, bold, #000);
   text-decoration: none;
-  color: #000000;
 }
 
 .main-nav__item {
@@ -29,4 +27,17 @@
     box-sizing: border-box;
     background: 0 0;
   }
+  .main-nav__link {
+    padding-top: 20px;
+    padding-right: 33px;
+    .font(15px, 24px, bold, #000);
+    text-decoration: none;
+  }
+  .main-nav__item {
+    padding: 0;
+    border: 0;
+  }
+  .main-nav .main-nav__item:last-child {
+  border: 0;
+}
 }

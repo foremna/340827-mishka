@@ -20,3 +20,36 @@
   padding-left: 30px;
   padding-right: 30px;
 }
+
+@media (min-width: @tablet-width) {
+  .populations__about {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 45px;
+  }
+  .populations__title {
+    display: flex;
+    margin-bottom: 45px;
+  }
+  .populations__knitting {
+    .font(43px, 50px, bold, #000000);
+    margin: 0;
+    flex-grow: 1;
+  }
+  .populations__goods-week {
+    width: 100px;
+    align-self: center;
+    text-align: center;
+  }
+  .populations__details {
+    width: 290px;
+  }
+  .populations__item-knittin {
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+  }
+}

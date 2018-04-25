@@ -1,13 +1,15 @@
 .toy {
-  width: 100%;
   background-color: #56c3b2;
   padding: 7px 30px;
 }
 
 .toy__children {
-  font-size: 19px;
-  line-height: 24px;
-  font-weight: bold;
-  color: #ffffff;
+  .font(19px, 24px, bold, #ffffff);
   width: 130px;
+}
+
+@media (min-width: @tablet-width) {
+  .toy {
+    width: 50%;
+  }
 }
