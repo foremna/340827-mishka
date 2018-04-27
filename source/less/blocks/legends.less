@@ -1,5 +1,24 @@
 .legends {
+  position: relative;
   .font(17px, 16px, bold, @mint);
   text-transform: uppercase;
-  padding-right: 27px;
+}
+
+.legends::after {
+  content: "";
+  position: absolute;
+  background-color: @mint;
+  width: 200px;
+  height: 1px;
+  top: 8px;
+  left: 63px;
+}
+
+@media (min-width: @tablet-width) {
+  .legends {
+    width: 167px;
+  }
+  .legends::after {
+    display: none;
+  }
 }

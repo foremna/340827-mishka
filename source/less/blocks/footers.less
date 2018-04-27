@@ -11,3 +11,24 @@
 .footers__develop {
   .font(19px, 18px, bold, #000000);
 }
+.footers__logo {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .footers__footer {
+    display: flex;
+    justify-content: space-between;
+    min-height: 142px;
+  }
+  .footers__logo {
+    display: block;
+  }
+  .footers__social-icon-network {
+    display: flex;
+    align-items: center;
+  }
+  .footers__develop {
+  margin-top: 60px;
+  }
+}

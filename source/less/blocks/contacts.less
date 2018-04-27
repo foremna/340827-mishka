@@ -36,3 +36,34 @@
   margin-top: 40px;
   margin-left: -30px;
 }
+
+@media (min-width: @tablet-width) {
+  .contacts__contact {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  .contacts__cont {
+    .font(43px, 50px, bold, #000000);
+  }
+  .contacts__details {
+    display: flex;
+    width: 100%;
+  }
+  .contacts__address {
+    width: 272px;
+  }
+  .contacts__mailto {
+    flex-grow: 1;
+    margin: 0;
+  }
+  .contacts__maps {
+    margin: 0;
+    margin-top: 55px;
+    margin-bottom: 55px;
+  }
+  .contacts__button {
+    display: block;
+    margin: 0 auto;
+    width: 225px;
+  }
+}
