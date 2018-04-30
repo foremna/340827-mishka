@@ -21,25 +21,54 @@
     display: flex;
     align-content: flex-start;
     flex-wrap: wrap;
+    background-image: url(../img/review@1x.jpg);
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    padding-bottom: 80px;
     padding-left: 50px;
     padding-right: 50px;
   }
+
   .comments__comment {
-  .font(43px, 50px, bold, #000000);
+    .font(43px, 50px, bold, #000000);
     flex-grow: 1;
     order: -2;
     margin: 0;
   }
+
   .comments__quote {
-   margin-top: 47px;
-   margin-bottom: 60px;
+    margin-top: 47px;
+    margin-bottom: 60px;
   }
+
   .comments__quotes {
     flex-grow: 1;
+    line-height: 30px;
   }
+
   .comments__writes-button {
     width: 175px;
     padding: 13px 0;
     order: -1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .comments__com {
+    background-image: url(../img/review@1x.jpg);
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 225px;
+    padding-right: 50px;
+  }
+
+  .comments__comment {
+    .font(53px, 57px, bold, #000000);
+  }
+
+  .comments__quote {
+    margin-top: 60px;
+    margin-bottom: 60px;
   }
 }
