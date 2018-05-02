@@ -3,3 +3,28 @@
   padding-left: 30px;
   padding-right: 30px;
 }
+
+@media (min-width: @tablet-width) {
+  .about__abouts {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .about__short {
+    margin: 0;
+    margin-bottom: 40px;
+    .font(43px, 50px, bold, #000000);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about__abouts {
+    padding-left: 225px;
+    padding-right: 225px;
+  }
+
+  .about__short {
+    margin-bottom: 60px;
+    .font(53px, 57px, bold, #000000);
+  }
+}

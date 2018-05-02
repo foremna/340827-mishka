@@ -3,13 +3,25 @@
   padding-right: 30px;
 }
 
-.orders__required-field {
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  padding-bottom: 25px;
+@media (min-width: @tablet-width) {
+  .orders {
+    margin-top: 70px;
+  }
+
+  .orders__order {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .orders__desc {
+    width: 615px;
+    margin: 0;
+    margin-bottom: 60px;
+  }
 }
 
-.orders__send-order {
-  margin-top: 15px;
+@media (min-width: @desktop-width) {
+  .orders__desc {
+    margin-left: 225px;
+  }
 }

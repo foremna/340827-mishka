@@ -1,3 +1,19 @@
 .radio-color__label {
   .font(17px, 18px, bold, #000000);
 }
+
+.radio-color__input {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .radio-color__label {
+    display: block;
+    .font(19px, 18px, bold, #000000);
+    padding: 15px 0 20px 80px;
+    margin-bottom: 20px;
+    flex-basis: 2%;
+    flex-grow: 1;
+    margin-right: 40px;
+  }
+}

@@ -1,19 +1,39 @@
-.offers {
+.offers-handmade {
+  margin: 0;
+  .font(27px, 30px, bold, #000000);
+  padding-top: 65px;
+  padding-bottom: 90px;
+  text-align: center;
+}
+
+.offers-handmade--index {
   background-image: url(../img/hero-mobile@1x.jpg);
   background-color: #fafafa;
   background-repeat: no-repeat;
   background-position: center;
-  background-position-y: -35px;
-  padding-left: 30px;
-  padding-right: 30px;
+  background-position-y: -57px;
+  padding-left: 38px;
+  padding-right: 38px;
+  text-align: center;
 }
 
-.offers__handmade {
-  font-size: 27px;
-  line-height: 30px;
-  font-weight: bold;
-  color: #000000;
-  padding-top: 65px;
-  padding-bottom: 90px;
-  text-align: center;
+@media (min-width: @tablet-width) {
+  .offers-handmade {
+    width: 100%;
+    .font(43px, 50px, bold, #000000);
+    padding-top: 100px;
+    padding-bottom: 368px;
+  }
+
+  .offers-handmade br {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .offers-handmade {
+    width: 615px;
+    margin: 0 auto;
+    .font(53px, 57px, bold, #000000);
+  }
 }

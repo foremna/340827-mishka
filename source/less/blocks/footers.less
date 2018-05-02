@@ -10,4 +10,40 @@
 
 .footers__develop {
   .font(19px, 18px, bold, #000000);
+  margin-right: 25px;
+}
+
+.footers__logo {
+  display: none;
+}
+
+.footers__developers {
+  display: flex;
+  min-height: 80px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+@media (min-width: @tablet-width) {
+  .footers__footer {
+    display: flex;
+    justify-content: space-between;
+    min-height: 142px;
+    align-items: center;
+  }
+
+  .footers__logo {
+    display: block;
+  }
+
+  .footers__social-icon-network {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+  }
+
+  .footers__develop {
+    margin-right: 25px;
+  }
 }

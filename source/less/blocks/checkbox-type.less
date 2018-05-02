@@ -1,3 +1,16 @@
 .checkbox-type__label {
   .font(17px, 18px, bold, #000000);
 }
+
+.checkbox-type__input {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .checkbox-type__label {
+    display: block;
+    .font(19px, 18px, bold, #000000);
+    padding: 15px 0 15px 80px;
+    margin-bottom: 25px;
+  }
+}

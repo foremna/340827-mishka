@@ -1,8 +1,18 @@
-.catalog-items__cat-items {
+.catalog-items {
+  margin: 0 auto;
   padding-top: 57px;
   padding-bottom: 57px;
-  padding-left: 30px;
-  padding-right: 30px;
-  background-color: @dark-gray;
+  width: 320px;
+  background-color: @light-gray;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-items {
+    .font(43px, 50px, bold, #000000);
+    padding-top: 55px;
+    padding-bottom: 55px;
+    width: 768px;
+    background: none;
+  }
 }
