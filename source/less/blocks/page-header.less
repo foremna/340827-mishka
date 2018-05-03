@@ -16,17 +16,25 @@
 }
 
 .page-header__logo-block {
-  order: -2;
+  display: flex;
+  box-sizing: border-box;
+  min-height: 80px;
 }
 
 @media (min-width: @tablet-width) {
   .page-header__logo {
+    padding: 0;
+    border-bottom: 0;
+  }
+
+  .page-header__logo-block {
     padding-left: 48px;
     width: 370px;
-    height: 88px;
+    min-height: 88px;
     box-sizing: border-box;
-    flex-grow: 1;
     background-color: #ffffff;
+    border-bottom: 1px solid @gray;
+    order: -2;
   }
 
   .page-header__toggle {
@@ -46,9 +54,12 @@
 
 @media (min-width: @desktop-width) {
   .page-header__logo {
+    margin: 0 auto;
+    border-bottom: 0;
+  }
+
+  .page-header__logo-block {
     width: 326px;
-    order: -2;
-    padding-left: 100px;
-    flex-grow: 0;
+    padding-left: 75px;
   }
 }
