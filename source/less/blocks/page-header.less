@@ -16,11 +16,48 @@
 }
 
 .page-header__logo-block {
+  position: relative;
   display: flex;
   box-sizing: border-box;
   min-height: 80px;
 }
 
+.page-header__toggle {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  border: 0;
+  cursor: pointer;
+}
+
+.page-header__toggle--open::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: #221f1f;
+  box-shadow: 0 6px 0 0 #221f1f,0 12px 0 0 #221f1f;
+}
+
+.page-header__toggle--close {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #221f1f;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+}
 @media (min-width: @tablet-width) {
   .page-header__logo {
     padding: 0;

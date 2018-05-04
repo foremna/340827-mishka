@@ -25,6 +25,13 @@
   position: absolute;
   left: 46px;
 }
+
+@media (max-width: @mobile-width-only) {
+  .user-nav--closed .user-nav__item {
+    display: none;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .user-nav {
     order: -1;

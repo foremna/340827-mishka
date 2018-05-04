@@ -21,6 +21,12 @@
   border-bottom: 1px solid @gray;
 }
 
+@media (max-width: @mobile-width-only) {
+  .main-nav--closed .main-nav__item {
+    display: none;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .main-nav {
     margin: 0;
