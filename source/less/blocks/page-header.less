@@ -1,3 +1,7 @@
+.page-header {
+  position: relative;
+}
+
 .page-header__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -9,6 +13,10 @@
   min-height: 80px;
   padding: 0 110px;
   border-bottom: 1px solid @gray;
+}
+
+.page-header__logo-image {
+  padding-left: 6px;
 }
 
 .page-header__delivery {
@@ -24,8 +32,8 @@
 
 .page-header__toggle {
   position: absolute;
-  right: 30px;
-  top: 30px;
+  right: 35px;
+  top: 32px;
   border: 0;
   cursor: pointer;
 }
@@ -56,8 +64,8 @@
   &::after {
     transform: rotate(-45deg);
   }
-
 }
+
 @media (min-width: @tablet-width) {
   .page-header__logo {
     padding: 0;
@@ -82,7 +90,7 @@
     display: block;
     margin: 0;
     flex-grow: 1;
-    padding-top: 20px;
+    padding-top: 18px;
     padding-right: 50px;
     .font(15px, 24px, 400, @sat-gray);
     text-align: right;

@@ -2,6 +2,20 @@
   width: 100%;
 }
 
+.production__svg {
+  fill: rgba(20, 144, 128, 0.5);
+}
+
+.production__interiors:hover .production__svg,
+.production__toys:hover .production__svg {
+  fill: rgba(20, 144, 128, 0.7);
+}
+
+.production__interiors:hover,
+.production__toys:hover {
+  height: 65px;
+}
+
 @media (min-width: @tablet-width) {
   .production {
     display: flex;

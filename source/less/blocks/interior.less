@@ -1,9 +1,20 @@
 .interior {
+  display: flex;
+  height: 107px;
+  justify-content: space-between;
   background-color: #63d1bb;
-  padding: 7px 30px;
+  padding: 28px 35px;
+  padding-bottom: 32px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.interior:first-child {
+  padding-right: 39px;
 }
 
 .interior__subject {
+  display: block;
   .font(19px, 24px, bold, #ffffff);
   width: 130px;
 }
@@ -11,5 +22,9 @@
 @media (min-width: @tablet-width) {
   .interior {
     width: 50%;
+  }
+
+  .interior__subject {
+    .font(20px, 30px, bold, #ffffff);
   }
 }

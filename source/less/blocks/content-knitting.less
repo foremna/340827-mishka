@@ -1,18 +1,26 @@
 .content-knitting {
   margin: 0 auto;
-  padding-top: 57px;
-  padding-bottom: 57px;
+  padding-top: 69px;
+  padding-bottom: 76px;
   width: 320px;
   background-color: @light-gray;
+  .font(27px, 30px, bold, #000000);
   text-align: center;
 }
 
 @media (min-width: @tablet-width) {
   .content-knitting {
     .font(43px, 50px, bold, #000000);
-    padding-top: 55px;
-    padding-bottom: 55px;
+    padding-top: 52px;
+    padding-bottom: 70px;
     width: 768px;
     background: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .content-knitting {
+    .font(53px, 57px, bold, #000000);
+    padding-bottom: 84px;
   }
 }
