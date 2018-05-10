@@ -1,16 +1,21 @@
 .full-name__label {
+  margin-top: 5px 0;
   .font(17px, 18px, bold, #000000);
 }
 
 .full-name__input {
+  width: 238px;
   font-size: 17px;
   line-height: 18px;
   border: 0;
   border-bottom: 2px solid black;
   padding-right: 21px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  margin-bottom: 25px;
+  padding-top: 12px;
+  padding-bottom: 17px;
+}
+
+.full-name__wrap {
+  margin-bottom: 19px;
 }
 
 @media (min-width: @tablet-width) {
@@ -33,6 +38,27 @@
   .full-name__wrap {
     display: flex;
     flex-grow: 1;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+  }
+
+  .full-name {
+    padding: 35px 50px;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .full-name {
+    padding: 35px 112px;
+    padding-right: 225px;
+    padding-bottom: 0;
+  }
+
+  .full-name__wrap {
+    margin-bottom: 41px;
+  }
+
+  .full-name__label {
+    margin-right: 25px;
   }
 }

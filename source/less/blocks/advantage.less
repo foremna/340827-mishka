@@ -1,13 +1,67 @@
 .advantage {
   padding: 0;
+  margin: 0;
 }
 
 .advantage__info {
+  position: relative;
   list-style-type: none;
 }
 
 .advantage__title {
+  display: block;
+  padding-top: 83px;
   .font(17px, 20px, bold, #000000);
+}
+
+.icons-info {
+  position: absolute;
+  top: 30px;
+  fill: @mint;
+}
+
+.icons-info--flower {
+  left: 8px;
+}
+
+.icons-info--heart {
+  top: 36px;
+  left: 8px;
+}
+
+.icons-info--ball {
+  top: 33px;
+  left: 3px;
+}
+
+.icons-info--rocket {
+  top: 34px;
+  left: -6px;
+}
+
+.icons-info--gift {
+  top: 32px;
+  left: 3px;
+}
+
+.advantage__info:nth-child(1) .advantage__title {
+  width: 195px;
+}
+
+.advantage__info:nth-child(2) .advantage__title {
+  width: 200px;
+}
+
+.advantage__info:nth-child(3) .advantage__title {
+  width: 200px;
+}
+
+.advantage__info:nth-child(4) .advantage__title {
+  width: 230px;
+}
+
+.advantage__info:nth-child(6) .advantage__title {
+  width: 230px;
 }
 
 @media (min-width: @tablet-width) {
@@ -19,15 +73,88 @@
 
   .advantage__info {
     width: 50%;
-    margin-bottom: 55px;
-  }
-
-  .advantage__info svg {
-    fill: @mint;
+    padding-top: 40px;
+    margin-bottom: 8px;
   }
 
   .advantage__title {
-    margin-top: 15px;
-  .font(20px, 22px, bold, #000000);
+    padding-top: 63px;
+    .font(20px, 22px, bold, #000000);
+  }
+
+  .advantage__info:nth-child(1) {
+    order: 1;
+  }
+
+  .advantage__info:nth-child(2) {
+    order: 3;
+  }
+
+  .advantage__info:nth-child(3) {
+    order: 5;
+  }
+
+  .advantage__info:nth-child(4) {
+    order: 2;
+  }
+
+  .advantage__info:nth-child(5) {
+    order: 4;
+  }
+
+  .advantage__info:nth-child(6) {
+    order: 6;
+  }
+
+  .advantage__info:nth-child(1) .advantage__title {
+    width: 208px;
+  }
+
+  .advantage__info:nth-child(2) .advantage__title {
+    width: 235px;
+  }
+
+  .advantage__info:nth-child(3) .advantage__title {
+    width: 218px;
+  }
+
+  .advantage__info:nth-child(4) .advantage__title {
+    width: 255px;
+  }
+
+  .advantage__info:nth-child(6) .advantage__title {
+    width: 242px;
+  }
+
+  .icons-info--flower {
+    top: 49px;
+    left: 9px;
+  }
+
+  .icons-info--heart {
+    top: 55px;
+    left: 9px;
+  }
+
+  .icons-info--ball {
+    top: 53px;
+    left: 3px;
+  }
+
+  .icons-info--rocket {
+    top: 54px;
+    left: -6px;
+  }
+
+  .icons-info--gift {
+    top: 52px;
+    left: 3px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .icons-info--money {
+    top: 50px;
+    left: 1px;
   }
 }

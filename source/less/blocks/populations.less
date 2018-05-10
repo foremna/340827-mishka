@@ -1,6 +1,6 @@
 .populations__knitting {
   .font(25px, 30px, bold, #000000);
-  margin-bottom: 0;
+  margin-bottom: 4px;
 }
 
 .populations__goods-week {
@@ -12,8 +12,12 @@
   .font(17px, 24px, bold, #444444);
   display: block;
   text-align: center;
-  margin-top: 24px;
-  margin-bottom: 24px;
+  margin-top: 18px;
+  margin-bottom: 27px;
+}
+
+.populations__details {
+  margin-top: 21px;
 }
 
 .populations__about {
@@ -23,7 +27,7 @@
 
 @media (min-width: @tablet-width) {
   .populations {
-    margin-bottom: 45px;
+    margin-bottom: 119px;
   }
 
   .populations__about {
@@ -32,11 +36,12 @@
     flex-direction: column;
     padding-left: 50px;
     padding-right: 50px;
-    margin-top: 45px;
+    margin-top: 57px;
   }
 
   .populations__title {
     display: flex;
+    margin-left: -3px;
     margin-bottom: 45px;
   }
 
@@ -47,18 +52,22 @@
   }
 
   .populations__goods-week {
-    width: 100px;
+    width: 125px;
+    padding-top: 6px;
     align-self: center;
     text-align: center;
   }
 
   .populations__details {
-    width: 250px;
+    width: 285px;
+    margin-top: 3px;
   }
 
   .populations__detail {
     margin: 0;
     margin-bottom: 40px;
+    font-size: 17px;
+    line-height: 30px;
   }
 
   .populations__item-knittin {
@@ -70,9 +79,10 @@
   }
 
   .populations__price {
-    margin-top: 50px;
-    margin-bottom: 30px;
+    margin-top: 27px;
+    margin-bottom: 36px;
     width: 290px;
+    .font(20px, 24px, bold, @sat-gray);
   }
 }
 
@@ -92,10 +102,12 @@
   }
 
   .populations__goods-week {
-    width: 175px;
+    width: 173px;
     order: -1;
-    padding: 10px 25px;
+    padding: 15px 25px;
     box-sizing: border-box;
+    font-size: 17px;
+    line-height: 17px;
   }
 
   .populations__details {
@@ -115,12 +127,12 @@
   }
 
   .populations__title {
-    margin-bottom: 65px;
+    margin-bottom: 39px;
   }
 
   .populations__detail {
     width: 285px;
-    margin-bottom: 60px;
+    margin-bottom: 51px;
     font-size: 17px;
     line-height: 30px;
   }

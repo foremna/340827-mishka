@@ -1,6 +1,23 @@
+.buttons-toggle {
+  margin-bottom: 37px;
+}
+
 .buttons-toggle__comment-toggle-prev,
 .buttons-toggle__comment-toggle-next {
   border: 1px solid #ececec;
   .size(126px, 51px);
   background-color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .buttons-toggle {
+    padding-top: 8px;
+  }
+
+  .buttons-toggle__comment-toggle-prev,
+  .buttons-toggle__comment-toggle-next {
+    padding: 0;
+    width: 85px;
+    border: none;
+  }
 }
