@@ -1,13 +1,13 @@
 .comments {
   position: relative;
 
-    &::before {
+  &::before {
     content: "";
     position: absolute;
     bottom: -50px;
     width: 320px;
     height: 6px;
-    background-image: url("../../img/bg-zigzag-line.svg");
+    background-image: url("../img/bg-zigzag-line.svg");
     background-size: cover;
     background-repeat: repeat-x;
     background-position-x: 9px;
@@ -45,6 +45,15 @@
 }
 
 @media (min-width: @tablet-width) {
+  .comments {
+    &::before {
+      width: 768px;
+      height: 15px;
+      bottom: -12px;
+      background-position-x: 19px;
+    }
+  }
+
   .comments__com {
     display: flex;
     align-content: flex-start;
@@ -57,7 +66,8 @@
     padding-right: 50px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../../img/review@2x.jpg");
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px;
     }
   }
 
@@ -96,6 +106,16 @@
 }
 
 @media (min-width: @desktop-width) {
+  .comments {
+    &::before {
+      width: 1050px;
+      height: 21px;
+      bottom: -66px;
+      background-position-x: 25px;
+      left: 196px;
+    }
+  }
+
   .comments__com {
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
@@ -105,6 +125,11 @@
     padding-bottom: 80px;
     padding-left: 226px;
     padding-right: 50px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px;
+    }
   }
 
   .comments__comment {

@@ -14,8 +14,31 @@
 @media (min-width: @tablet-width) {
   .production {
     display: flex;
+    position: relative;
     width: 100%;
     padding-left: 50px;
     padding-right: 50px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      bottom: -3px;
+      width: 768px;
+      height: 12px;
+      background-size: cover;
+      background-position-x: 26px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .production {
+    &::before {
+      width: 1250px;
+      height: 18px;
+      background-size: cover;
+      background-position-x: 24px;
+    }
   }
 }

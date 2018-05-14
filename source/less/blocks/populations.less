@@ -1,5 +1,18 @@
 .populations {
+  position: relative;
   margin-top: 28px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    width: 320px;
+    height: 6px;
+    background-image: url("../../img/bg-zigzag-line.svg");
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position-x: 9px;
+  }
 }
 
 .populations__knitting {
@@ -25,27 +38,21 @@
 }
 
 .populations__about {
-  position: relative;
   padding-left: 30px;
   padding-right: 30px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: -40px;
-    width: 320px;
-    height: 6px;
-    background-image: url("../../img/bg-zigzag-line.svg");
-    background-size: cover;
-    background-repeat: repeat-x;
-    background-position-x: 9px;
-  }
 }
 
 @media (min-width: @tablet-width) {
   .populations {
     margin-top: 0;
     margin-bottom: 119px;
+
+    &::before {
+      width: 768px;
+      height: 15px;
+      bottom: -69px;
+      background-position-x: 19px;
+    }
   }
 
   .populations__about {
@@ -54,14 +61,7 @@
     flex-direction: column;
     padding-left: 50px;
     padding-right: 50px;
-    margin-top: 57px;
-
-    &::before {
-      width: 768px;
-      height: 15px;
-      bottom: -69px;
-      background-position-x: 19px;
-    }
+    margin-top: 48px;
   }
 
   .populations__title {
@@ -114,6 +114,14 @@
 @media (min-width: @desktop-width) {
   .populations {
     margin-top: 0;
+
+    &::before {
+      width: 1050px;
+      height: 21px;
+      bottom: -96px;
+      background-position-x: 25px;
+      left: 196px;
+    }
   }
 
   .populations__about {
