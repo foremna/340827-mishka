@@ -1,3 +1,7 @@
+.populations {
+  margin-top: 28px;
+}
+
 .populations__knitting {
   .font(25px, 30px, bold, #000000);
   margin-bottom: 4px;
@@ -21,12 +25,26 @@
 }
 
 .populations__about {
+  position: relative;
   padding-left: 30px;
   padding-right: 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    width: 320px;
+    height: 6px;
+    background-image: url("../../img/bg-zigzag-line.svg");
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position-x: 9px;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .populations {
+    margin-top: 0;
     margin-bottom: 119px;
   }
 
@@ -37,6 +55,13 @@
     padding-left: 50px;
     padding-right: 50px;
     margin-top: 57px;
+
+    &::before {
+      width: 768px;
+      height: 15px;
+      bottom: -69px;
+      background-position-x: 19px;
+    }
   }
 
   .populations__title {
@@ -87,6 +112,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .populations {
+    margin-top: 0;
+  }
+
   .populations__about {
     margin-top: 134px;
   }

@@ -1,3 +1,19 @@
+.comments {
+  position: relative;
+
+    &::before {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    width: 320px;
+    height: 6px;
+    background-image: url("../../img/bg-zigzag-line.svg");
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position-x: 9px;
+  }
+}
+
 .comments__comment {
   .font(25px, 30px, bold, #000000);
 }

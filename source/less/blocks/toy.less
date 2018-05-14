@@ -1,9 +1,9 @@
 .toy {
   display: flex;
-  height: 107px;
   justify-content: space-between;
   background-color: #56c3b2;
-  padding: 28px 35px;
+  padding: 23px 28px;
+  padding-bottom: 19px;
   box-sizing: border-box;
   text-decoration: none;
 }
@@ -17,9 +17,16 @@
 @media (min-width: @tablet-width) {
   .toy {
     width: 50%;
+    height: 107px;
   }
 
   .toy__children {
     .font(20px, 30px, bold, #ffffff);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .toy {
+    height: 107px;
   }
 }
