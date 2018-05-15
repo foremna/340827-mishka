@@ -44,7 +44,7 @@
   width: 20px;
   height: 2px;
   background-color: #221f1f;
-  box-shadow: 0 6px 0 0 #221f1f,0 12px 0 0 #221f1f;
+  box-shadow: 0 6px 0 0 #221f1f, 0 12px 0 0 #221f1f;
 }
 
 .page-header__toggle--close {
@@ -66,8 +66,19 @@
   }
 }
 
+.page-header__picture {
+  display: flex;
+  align-items: center;
+}
+
 @media (min-width: @tablet-width) {
   .page-header__logo {
+    padding: 0;
+  }
+
+  .page-header__logo-image {
+    width: 112px;
+    height: 88px;
     padding: 0;
     border-bottom: 0;
   }
@@ -100,11 +111,17 @@
 @media (min-width: @desktop-width) {
   .page-header__logo {
     margin: 0 auto;
+    padding: 0;
     border-bottom: 0;
+  }
+
+  .page-header__logo-image {
+    width: 147px;
+    padding-right: 26px;
   }
 
   .page-header__logo-block {
     width: 326px;
-    padding-left: 75px;
+    padding: 0;
   }
 }

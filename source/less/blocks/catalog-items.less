@@ -10,17 +10,36 @@
 
 @media (min-width: @tablet-width) {
   .catalog-items {
+    position: relative;
     .font(43px, 50px, bold, #000000);
     padding-top: 52px;
-    padding-bottom: 70px;
+    padding-bottom: 80px;
     width: 768px;
     background: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      bottom: -2px;
+      width: 768px;
+      height: 12px;
+      background-size: cover;
+      background-position-x: 2px;
+      left: 0;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .catalog-items {
     .font(53px, 57px, bold, #000000);
-    padding-bottom: 84px;
+    padding-bottom: 97px;
+
+    &::before {
+      width: 1150px;
+      height: 16px;
+      left: -190px;
+    }
   }
 }
