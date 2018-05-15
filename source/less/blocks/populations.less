@@ -6,13 +6,17 @@
     content: "";
     position: absolute;
     bottom: -40px;
-    width: 320px;
+    width: 100%;
     height: 6px;
-    background-image: url("../../img/bg-zigzag-line.svg");
-    background-size: cover;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: auto 6px;
     background-repeat: repeat-x;
     background-position-x: 9px;
   }
+}
+
+.populations__wrapper {
+  position: relative;
 }
 
 .populations__knitting {
@@ -48,10 +52,11 @@
     margin-bottom: 119px;
 
     &::before {
-      width: 768px;
+      width: 100%;
       height: 15px;
       bottom: -69px;
       background-position-x: 19px;
+      background-size: auto 15px;
     }
   }
 
@@ -116,11 +121,11 @@
     margin-top: 0;
 
     &::before {
-      width: 1050px;
+      width: 100%;
       height: 21px;
       bottom: -96px;
       background-position-x: 25px;
-      left: 196px;
+      background-size: auto 21px;
     }
   }
 
