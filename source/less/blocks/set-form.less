@@ -13,6 +13,15 @@
   margin-top: 28px;
   margin-bottom: 56px;
   font-size: 17px;
+
+  &:hover {
+    background-color: @sat-gray;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .set-form__contacts {
@@ -34,6 +43,11 @@
   padding-right: 21px;
   padding-top: 12px;
   padding-bottom: 19px;
+
+  &:hover,
+  &:active {
+    border-color: @mint;
+  }
 }
 
 .icons-input--phone,
@@ -47,6 +61,11 @@
 .icons-input--phone {
   bottom: 17px;
   right: 8px;
+}
+
+.email-input:hover .icons-input--phone,
+.phone-input:hover .icons-input--email {
+  fill: @mint;
 }
 
 .set-form__users {

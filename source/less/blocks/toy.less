@@ -6,12 +6,20 @@
   padding-bottom: 19px;
   box-sizing: border-box;
   text-decoration: none;
+
+  &:hover {
+    background-color: #46c1ae;
+  }
 }
 
 .toy__children {
   display: block;
   .font(19px, 24px, bold, #ffffff);
   width: 130px;
+}
+
+.toy:active .toy__children {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 @media (min-width: @tablet-width) {

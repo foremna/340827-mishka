@@ -2,6 +2,14 @@
   margin-top: 30px;
   margin-bottom: 30px;
   border: 1px solid @gray;
+
+  &:hover {
+    box-shadow: 0 0px 17px 0 rgba(0, 0, 0, 0.2)
+  }
+
+  &:active {
+    box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.2)
+  }
 }
 
 .item-block__item-desc {
@@ -38,6 +46,14 @@
   top: 42px;
   right: 28px;
   fill: @dark-gray;
+}
+
+.item-block:hover .item-block__to-basket {
+  fill: @mint;
+}
+
+.item-block:active .item-block__to-basket {
+  fill: rgba(99,209,187,.3);
 }
 
 @media (min-width: @tablet-width) {

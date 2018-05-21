@@ -15,6 +15,22 @@
 .user-nav__link {
   .font(17px, 24px, bold, #000000);
   text-decoration: none;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.user-nav__link:hover .user-nav__link-svg {
+  fill: @mint;
+}
+
+.user-nav__link:active .user-nav__link-svg {
+  fill: rgba(99,209,187,.3);
 }
 
 .user-nav__item {

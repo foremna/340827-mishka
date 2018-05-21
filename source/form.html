@@ -11,7 +11,7 @@
     <div class="none"><include src="build/img/sprite.svg"></include></div>
 
     <header class="page-header page-header--index">
-      <div class="page-header__wrapper wrapper">
+      <div class="page-header__wrapper page-header__wrapper--form wrapper">
         <div class="page-header__logo-block">
           <a href="index.html" class="page-header__logo">
             <picture class="page-header__picture">
@@ -68,10 +68,8 @@
                   <div class="fields-form__checkbox-types checkbox-type set-form" title="Тип">
                     <h2 class="fields-form__legend legends">Тип</h2>
                     <div class="set-form__wrap set-form__checkbox-type">
-                      <input class="checkbox-type__input" type="checkbox" name="interior" id="interior" checked>
-                      <label class="checkbox-type__label" for="interior">Аксессуар для интерьера</label>
-                      <input class="checkbox-type__input" type="checkbox" name="toys" id="toys">
-                      <label class="checkbox-type__label" for="toys">Детская игрушка</label>
+                      <label class="checkbox-type__label">Аксессуар для интерьера<input class="checkbox-type__input" type="checkbox" name="interior" checked><span class="checkbox-type__indication"></span></label>
+                      <label class="checkbox-type__label">Детская игрушка<input class="checkbox-type__input" type="checkbox" name="toys"><span class="checkbox-type__indication"></span></label>
                     </div>
                   </div>
                   <div class="fields-form__radio-colors radio-color set-form">
@@ -137,26 +135,26 @@
         <div class="footers__wrapper wrapper">
           <div class="footers__footer">
             <a class="footers__logo" href="https://up.htmlacademy.ru/adaptive/14">
-              <svg width="101" height="34">
+              <svg width="101" height="34" class="footers__logo-mishka">
                 <use xlink:href="#logo-footer"></use>
               </svg>
               <span class="visually-hidden">Логотип</span>
             </a>
             <div class="social-icon-network  footers__social-icon-network">
               <a href="#" class="social-icon-network__social-icons social-icon">
-                <svg width="21" height="21">
+                <svg width="21" height="21" class="social-icon__svg">
                   <use xlink:href="#icon-insta"></use>
                 </svg>
                 <span class="visually-hidden">instagram</span>
               </a>
               <a href="#" class="social-icon-network__social-icons social-icon">
-                <svg width="14" height="27">
+                <svg width="14" height="27" class="social-icon__svg">
                   <use xlink:href="#icon-fb"></use>
                 </svg>
                 <span class="visually-hidden">facebook</span>
               </a>
               <a href="#" class="social-icon-network__social-icons social-icon">
-                <svg width="23" height="20">
+                <svg width="23" height="20" class="social-icon__svg">
                   <use xlink:href="#icon-twitter"></use>
                 </svg>
                 <span class="visually-hidden">twitter</span>

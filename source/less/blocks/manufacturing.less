@@ -6,6 +6,14 @@
   border: 1px solid @gray;
   padding-bottom: 32px;
   margin: 30px;
+
+  &:hover {
+    box-shadow: 0 0px 17px 0 rgba(0, 0, 0, 0.2)
+  }
+
+  &:active {
+    box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.2)
+  }
 }
 
 .manufacturing__processes {
@@ -61,6 +69,15 @@
   width: 192px;
   margin-left: 33px;
   font-size: 17px;
+
+  &:hover {
+    background-color: @sat-gray;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {

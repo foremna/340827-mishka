@@ -7,7 +7,6 @@
 }
 
 .radio-color__indication {
-  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -39,6 +38,14 @@
     transform: rotate(-45deg);
     opacity: 0;
   }
+}
+
+.radio-color__label:hover .radio-color__indication {
+  border-color: @mint;
+}
+
+.radio-color__label:active .radio-color__indication {
+  border-color: #c7c7c7;
 }
 
 .radio-color__input:checked + .radio-color__indication::before {

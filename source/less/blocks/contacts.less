@@ -22,6 +22,15 @@
   color: #444444;
   border-bottom: 1px solid @mint;
   padding-bottom: 3px;
+
+  &:hover {
+    color: @mint;
+  }
+
+  &:active {
+    color: rgba(99,209,187,.3);
+    border-color: rgba(99,209,187,.3);
+  }
 }
 
 .contacts__email {
@@ -61,6 +70,17 @@
     width: 66px;
     height: 100px;
     background-image: url("../img/icon-map-pin.svg");
+  }
+}
+
+.contacts__button {
+  &:hover {
+    background-color: @sat-gray;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
   }
 }
 

@@ -12,6 +12,10 @@
   .font(19px, 18px, bold, #000000);
   margin-right: 32px;
   padding-bottom: 9px;
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .footers__logo {
@@ -28,6 +32,24 @@
 
 .footers__logo-academy {
   fill: @mint;
+
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    fill: rgba(99,209,187,.3);
+  }
+}
+
+.footers__logo-mishka {
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    fill: rgba(99,209,187,.3);
+  }
 }
 
 @media (min-width: @tablet-width) {
