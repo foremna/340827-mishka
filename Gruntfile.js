@@ -95,7 +95,7 @@ module.exports = function(grunt) {
       },
       spite: {
         files: {
-          "build/img/sprite.svg": ["source/img/icon-*.svg"]
+          "source/img/sprite.svg": ["source/img/icon-*.svg"]
         }
       }
     },
@@ -109,8 +109,7 @@ module.exports = function(grunt) {
       html: {
         files: [{
           expand: true,
-          src: ["source/*.html"],
-          dest: "build"
+          src: ["build/*.html"]
         }]
       }
     },

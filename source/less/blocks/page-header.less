@@ -4,8 +4,16 @@
 
 .page-header__wrapper {
   display: flex;
+  position: relative;
   flex-wrap: wrap;
   background-color: #f9f9f9;
+
+  &::before {
+    width: 100%;
+    height: 21px;
+    bottom: -66px;
+    background-size: auto 21px;
+  }
 }
 
 .page-header__logo {
@@ -28,6 +36,7 @@
   display: flex;
   box-sizing: border-box;
   min-height: 80px;
+  background-color: #ffffff;
 }
 
 .page-header__toggle {
@@ -36,6 +45,7 @@
   top: 32px;
   border: 0;
   cursor: pointer;
+  background: none;
 }
 
 .page-header__toggle--open::before {
@@ -72,6 +82,19 @@
 }
 
 @media (min-width: @tablet-width) {
+  .page-header__wrapper {
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      bottom: -3px;
+      width: 768px;
+      height: 12px;
+      background-size: cover;
+      z-index: 10;
+    }
+  }
+
   .page-header__logo {
     padding: 0;
   }
@@ -109,6 +132,14 @@
 }
 
 @media (min-width: @desktop-width) {
+  .page-header__wrapper {
+    &::before {
+      width: 1250px;
+      height: 18px;
+      background-position-x: 13px;
+      background-size: cover;
+    }
+  }
   .page-header__logo {
     margin: 0 auto;
     padding: 0;

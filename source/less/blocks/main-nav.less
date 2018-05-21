@@ -1,7 +1,10 @@
 .main-nav {
+  width: 320px;
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: none;
+  background-color: #ffffff;
 }
 
 .main-nav .main-nav__item:last-child {
@@ -20,17 +23,18 @@
 }
 
 @media (max-width: @mobile-width-only) {
-  .main-nav--closed .main-nav__item {
+  .main-nav--closed {
     display: none;
   }
 
-  .main-nav--opened .main-nav__item {
+  .main-nav--opened {
     display: block;
   }
 }
 
 @media (min-width: @tablet-width) {
   .main-nav {
+    width: 345px;
     display: flex;
     min-height: auto;
     padding: 0;
@@ -58,6 +62,7 @@
 
 @media (min-width: @desktop-width) {
   .main-nav {
+    width: 425px;
     margin: 0;
     height: 88px;
     order: -3;

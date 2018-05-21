@@ -1,7 +1,9 @@
 {
-  "name": "mishka",
-  "version": "13.0.0",
-  "private": true,
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
   "description": "Личный проект Мишка от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
@@ -23,18 +25,6 @@
     "stylelint": "8.4.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
-  "scripts": {
-    "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint 'source/less/**/*.less' --syntax less",
-    "test": "npm run editorconfig && npm run stylelint",
-    "build": "grunt build",
-    "start": "npm run build && grunt serve"
-  },
-  "browserslist": [
-    "last 2 versions",
-    "IE 11",
-    "Firefox ESR"
-  ],
   "editorconfig-cli": [
     "*.json",
     "*.js",
@@ -45,5 +35,14 @@
   ],
   "engines": {
     "node": "8.9"
-  }
+  },
+  "private": true,
+  "scripts": {
+    "build": "grunt build",
+    "editorconfig": "editorconfig-cli",
+    "start": "npm run build && grunt serve",
+    "stylelint": "stylelint 'source/less/**/*.less' --syntax less",
+    "test": "npm run editorconfig && npm run stylelint"
+  },
+  "version": "13.0.0"
 }
