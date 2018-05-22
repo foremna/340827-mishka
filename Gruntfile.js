@@ -95,7 +95,7 @@ module.exports = function(grunt) {
       },
       spite: {
         files: {
-          "source/img/sprite.svg": ["source/img/icon-*.svg"]
+          "source/img/sprite.svg": ["source/img/*.svg"]
         }
       }
     },

@@ -30,7 +30,7 @@
   margin-bottom: 25px;
 }
 
-.icons-process {
+.manufacturing__icons-process {
   position: absolute;
   top: 30px;
   left: 33px;
@@ -58,11 +58,20 @@
   }
 }
 
-.icons-video {
+.manufacturing__icons-video {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  &:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  &:active {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.3;
+  }
 }
 
 .manufacturing__order-button {
@@ -129,7 +138,7 @@
     padding: 14px 0;
   }
 
-  .icons-process {
+  .manufacturing__icons-process {
     top: 6px;
     left: 41px;
   }
@@ -178,7 +187,7 @@
     padding-left: 73px;
   }
 
-  .icons-process {
+  .manufacturing__icons-process {
     top: 41px;
     left: 74px;
   }

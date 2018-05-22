@@ -20,39 +20,39 @@
               <img class="page-header__logo-image" width="85" height="35" src="img/logo-mobile.svg" alt="Логотип Мишка">
             </picture>
           </a>
-            <button class="page-header__toggle page-header__toggle--open" type="button"></button>
+          <button class="page-header__toggle page-header__toggle--open" type="button"></button>
         </div>
-          <ul class="main-nav main-nav--opened">
+        <ul class="main-nav main-nav--opened">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
+          </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
-            </li>
-              <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Вязание на заказ</a>
-            </li>
-          </ul>
-          <ul class="user-nav user-nav--opened">
-            <li class="user-nav__item user-nav__item--search">
-              <a class="user-nav__link user-nav__link--search" href="#">
-                <svg class="user-nav__link-svg" width="17" height="17">
-                  <use xlink:href="#icon-search"></use>
-                </svg>
-                <span class="user-nav__link-search-site">Поиск по сайту</span>
-              </a>
-            </li>
-            <li class="user-nav__item user-nav__item--basket">
-              <a class="user-nav__link user-nav__link--basket" href="#">
-                <svg class="user-nav__link-svg" width="20" height="18">
-                  <use xlink:href="#icon-cart"></use>
-                </svg>Корзина: пока пуста
-              </a>
-            </li>
-          </ul>
-          <ul class="extra-nav">
-            <li class="extra-nav__item"><a class="extra-nav__link" href="#">Новые поступления</a></li>
-            <li class="extra-nav__item"><a class="extra-nav__link" href="#">Распродажа</a></li>
-          </ul>
-          <p class="page-header__delivery">Бесплатная доставка по России</p>
-          <h2 class="page-header__knitt content-knitting">Вязание на заказ</h2>
+            <a class="main-nav__link" href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="user-nav user-nav--opened">
+          <li class="user-nav__item user-nav__item--search">
+            <a class="user-nav__link user-nav__link--search" href="#">
+              <svg class="user-nav__link-svg" width="17" height="17">
+                <use xlink:href="#icon-search"></use>
+              </svg>
+              <span class="user-nav__link-search-site">Поиск по сайту</span>
+            </a>
+          </li>
+          <li class="user-nav__item user-nav__item--basket">
+            <a class="user-nav__link user-nav__link--basket" href="#">
+              <svg class="user-nav__link-svg" width="20" height="18">
+                <use xlink:href="#icon-cart"></use>
+              </svg>Корзина: пока пуста
+            </a>
+          </li>
+        </ul>
+        <ul class="extra-nav">
+          <li class="extra-nav__item"><a class="extra-nav__link" href="#">Новые поступления</a></li>
+          <li class="extra-nav__item"><a class="extra-nav__link" href="#">Распродажа</a></li>
+        </ul>
+        <p class="page-header__delivery">Бесплатная доставка по России</p>
+        <h2 class="page-header__knitt content-knitting">Вязание на заказ</h2>
       </div>
     </header>
 
@@ -63,13 +63,13 @@
           <div class="orders__order">
             <p class="orders__desc">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
             <div class="orders__form-orders form-order">
-              <form action="https://echo.htmlacademy.ru" method="get" class="form-order__forms forms-orders">
+              <form action="https://echo.htmlacademy.ru" method="get" class="form-order__forms">
                 <div class="forms-orders__form fields-form">
                   <div class="fields-form__checkbox-types checkbox-type set-form" title="Тип">
                     <h2 class="fields-form__legend legends">Тип</h2>
                     <div class="set-form__wrap set-form__checkbox-type">
-                      <label class="checkbox-type__label">Аксессуар для интерьера<input class="checkbox-type__input" type="checkbox" name="interior" checked><span class="checkbox-type__indication"></span></label>
-                      <label class="checkbox-type__label">Детская игрушка<input class="checkbox-type__input" type="checkbox" name="toys"><span class="checkbox-type__indication"></span></label>
+                      <label class="checkbox-type__label">Аксессуар для интерьера<input class="checkbox-type__input" type="radio" name="interior" checked><span class="checkbox-type__indication"></span></label>
+                      <label class="checkbox-type__label">Детская игрушка<input class="checkbox-type__input" type="radio" name="toys"><span class="checkbox-type__indication"></span></label>
                     </div>
                   </div>
                   <div class="fields-form__radio-colors radio-color set-form">
