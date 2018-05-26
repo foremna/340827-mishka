@@ -1,7 +1,7 @@
 .comments {
   position: relative;
 
-  &::before {
+  &::after {
     content: "";
     position: absolute;
     bottom: -50px;
@@ -57,7 +57,7 @@
 
 @media (min-width: @tablet-width) {
   .comments {
-    &::before {
+    &::after {
       width: 100%;
       height: 15px;
       bottom: -12px;
@@ -119,7 +119,7 @@
 
 @media (min-width: @desktop-width) {
   .comments {
-    &::before {
+    &::after {
       width: 100%;
       height: 21px;
       bottom: -66px;

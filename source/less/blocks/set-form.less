@@ -63,8 +63,13 @@
   right: 8px;
 }
 
-.set-form__email-input:hover .set-form__icons-input--phone,
-.set-form__phone-input:hover .set-form__icons-input--email {
+.set-form__email-input:hover + svg,
+.set-form__phone-input:hover + svg {
+  fill: @mint;
+}
+
+.set-form__email-input:focus + svg,
+.set-form__phone-input:focus + svg {
   fill: @mint;
 }
 

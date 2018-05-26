@@ -4,6 +4,7 @@
 }
 
 .footers__footer {
+  padding-top: 18px;
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -24,7 +25,8 @@
 
 .footers__developers {
   display: flex;
-  min-height: 80px;
+  padding-top: 45px;
+  padding-bottom: 20px;
   justify-content: center;
   align-items: center;
   text-decoration: none;
@@ -53,6 +55,11 @@
 }
 
 @media (min-width: @tablet-width) {
+  .footers__developers {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   .footers {
     margin-top: 24px;
   }
@@ -60,10 +67,8 @@
   .footers__footer {
     display: flex;
     justify-content: space-between;
-    min-height: 142px;
     align-items: center;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 50px 50px;
   }
 
   .footers__logo {
@@ -90,6 +95,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .footers__footer {
+    padding: 54px 50px;
+  }
+
   .footers__logo {
     margin-right: 59px;
   }
