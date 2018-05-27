@@ -4,8 +4,14 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/opensans.woff" as="font">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
     <link rel="stylesheet" href="css/style.css">
   </head>
+  <script>document.createElement("picture");</script>
+  <script src="js/picturefill.js" async></script>
   <body>
 
     <div class="none"><include src="build/img/sprite.svg"></include></div>
@@ -196,7 +202,7 @@
               </div>
             </div>
             <div class="contacts__maps">
-              <iframe src="https://yandex.ru/map-widget/v1/-/CBqsyNVRHC" frameborder="0"></iframe>
+              <iframe class="contacts__iframes" src="https://yandex.ru/map-widget/v1/-/CBqsyNVRHC"></iframe>
             </div>
             <a href="feedback.html" class="contacts__button button">Напишите нам</a>
           </div>
@@ -251,12 +257,12 @@
           <p class="append__sizes">Выберите размер:</p>
           <form action="https://echo.htmlacademy.ru" method="get">
             <div class="append__modal-size">
+              <input class="append__input-sizes" type="radio" name="sizes" id="size-s" checked>
               <label class="append__label-sizes" for="size-s">s</label>
-              <input class="append__input-sizes" type="radio" name="size-s" id="size-s" checked>
+              <input class="append__input-sizes" type="radio" name="sizes" id="size-m">
               <label class="append__label-sizes" for="size-m">m</label>
-              <input class="append__input-sizes" type="radio" name="size-m" id="size-m">
+              <input class="append__input-sizes" type="radio" name="sizes" id="size-l">
               <label class="append__label-sizes" for="size-l">l</label>
-              <input class="append__input-sizes" type="radio" name="size-l" id="size-l">
             </div>
             <button class="modal__append button-append" type="button">Добавить</button>
           </form>
