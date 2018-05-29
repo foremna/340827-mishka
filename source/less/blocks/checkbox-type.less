@@ -33,16 +33,20 @@
   border-color: @mint;
 }
 
+.checkbox-type__input:focus .checkbox-type__indication {
+  border-color: @mint;
+}
+
 .checkbox-type__label:active .checkbox-type__indication {
   border-color: #c7c7c7;
 }
 
-.checkbox-type__input:checked + .checkbox-type__indication::after {
+.checkbox-type__input:checked + .checkbox-type__label .checkbox-type__indication::after {
   opacity: 1;
 }
 
-.checkbox-type__input {
-  display: none;
+.checkbox-type__input:checked:focus + .checkbox-type__label .checkbox-type__indication {
+  border-color: @mint;
 }
 
 @media (min-width: @tablet-width) {

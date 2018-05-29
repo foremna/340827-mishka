@@ -9,9 +9,9 @@
     <link rel="preload" href="fonts/opensansbold.woff" as="font">
     <link rel="preload" href="fonts/opensansbold.woff2" as="font">
     <link rel="stylesheet" href="css/style.css">
+    <script>document.createElement("picture");</script>
+    <script src="js/picturefill.js" async></script>
   </head>
-  <script>document.createElement("picture");</script>
-  <script src="js/picturefill.js" async></script>
   <body class="page-form">
 
     <div class="none"><include src="build/img/sprite.svg"></include></div>
@@ -74,19 +74,27 @@
                   <div class="fields-form__checkbox-types checkbox-type set-form" title="Тип">
                     <h2 class="fields-form__legend legends">Тип</h2>
                     <div class="set-form__wrap set-form__checkbox-type">
-                      <label class="checkbox-type__label">Аксессуар для интерьера<input class="checkbox-type__input" type="radio" name="interiors" checked><span class="checkbox-type__indication"></span></label>
-                      <label class="checkbox-type__label">Детская игрушка<input class="checkbox-type__input" type="radio" name="interiors"><span class="checkbox-type__indication"></span></label>
+                      <input class="checkbox-type__input visually-hidden" type="radio" name="interiors" id="interior" checked>
+                      <label class="checkbox-type__label" for="interior">Аксессуар для интерьера<span class="checkbox-type__indication"></span></label>
+                      <input class="checkbox-type__input visually-hidden" type="radio" name="interiors" id="toy">
+                      <label class="checkbox-type__label" for="toy">Детская игрушка<span class="checkbox-type__indication"></span></label>
                     </div>
                   </div>
                   <div class="fields-form__radio-colors radio-color set-form">
                     <h2 class="fields-form__legend legends">Цвет</h2>
                     <div class="set-form__wrap set-form__radio-wrap">
-                      <label class="radio-color__label">Белый<input class="radio-color__input" type="checkbox" name="white" checked><span class="radio-color__indication"></span></label>
-                      <label class="radio-color__label">Серый<input class="radio-color__input" type="checkbox" name="gray" checked><span class="radio-color__indication"></span></label>
-                      <label class="radio-color__label">«Тиффани»<input class="radio-color__input" type="checkbox" name="tiffany"><span class="radio-color__indication"></span></label>
-                      <label class="radio-color__label">Черный<input class="radio-color__input" type="checkbox" name="black"><span class="radio-color__indication"></span></label>
-                      <label class="radio-color__label">Розовый<input class="radio-color__input" type="checkbox" name="pink"><span class="radio-color__indication"></span></label>
-                      <label class="radio-color__label">Оранжевый<input class="radio-color__input" type="checkbox" name="orange"><span class="radio-color__indication"></span></label>
+                      <input class="radio-color__input visually-hidden" type="checkbox" name="white" id="whites" checked>
+                      <label class="radio-color__label" for="whites">Белый<span class="radio-color__indication"></span></label>
+                      <input class="radio-color__input visually-hidden" type="checkbox" name="gray" id="grays" checked>
+                      <label class="radio-color__label" for="grays">Серый<span class="radio-color__indication"></span></label>
+                      <input class="radio-color__input visually-hidden" type="checkbox" name="tiffany" id="tiffanys">
+                      <label class="radio-color__label" for="tiffanys">«Тиффани»<span class="radio-color__indication"></span></label>
+                      <input class="radio-color__input visually-hidden" type="checkbox" name="black" id="blacks">
+                      <label class="radio-color__label" for="blacks">Черный<span class="radio-color__indication"></span></label>
+                      <input class="radio-color__input visually-hidden" type="checkbox" name="pink" id="pinks">
+                      <label class="radio-color__label" for="pinks">Розовый<span class="radio-color__indication"></span></label>
+                      <input class="radio-color__input visually-hidden" type="checkbox" name="orange" id="oranges">
+                      <label class="radio-color__label" for="oranges">Оранжевый<span class="radio-color__indication"></span></label>
                     </div>
                   </div>
                   <div class="fields-form__full-names full-name set-form">

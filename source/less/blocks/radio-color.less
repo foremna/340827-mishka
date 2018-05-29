@@ -48,16 +48,16 @@
   border-color: #c7c7c7;
 }
 
-.radio-color__input:checked + .radio-color__indication::before {
+.radio-color__input:checked + .radio-color__label .radio-color__indication::before {
   opacity: 1;
 }
 
-.radio-color__input:checked + .radio-color__indication::after {
+.radio-color__input:checked + .radio-color__label .radio-color__indication::after {
   opacity: 1;
 }
 
-.radio-color__input {
-  display: none;
+.radio-color__input:focus + .radio-color__label .radio-color__indication {
+  border-color: @mint;
 }
 
 .radio-color__label:first-child {

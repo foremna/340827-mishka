@@ -9,9 +9,9 @@
     <link rel="preload" href="fonts/opensansbold.woff" as="font">
     <link rel="preload" href="fonts/opensansbold.woff2" as="font">
     <link rel="stylesheet" href="css/style.css">
+    <script>document.createElement("picture");</script>
+    <script src="js/picturefill.js" async></script>
   </head>
-  <script>document.createElement("picture");</script>
-  <script src="js/picturefill.js" async></script>
   <body>
 
     <div class="none"><include src="build/img/sprite.svg"></include></div>
@@ -103,6 +103,9 @@
               </table>
             </div>
             <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+              <source type="image/webp" class="populations__item-knittin" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
               <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
               <img class="populations__item-knittin" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаная корзинка" >
