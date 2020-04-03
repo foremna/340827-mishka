@@ -1,4 +1,11 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+Верстка интернет-магазина, сборка написана на Grunt.
+---
+
+### Инструкция по запуску
+1. Скачайте проект на компьютер
+2. Установите Grunt. На Windows npm install -g grunt-cli, на MacOS sudo npm install -g grunt-cli
+3. В терминале, в папке проекта запустите сборку командой npm run build && grunt serve
 
 Репозиторий создан для обучения на интенсивном онлайн‑курсе «[Профессиональный HTML и CSS](https://htmlacademy.ru/intensive/adaptive)», уровень 2 от [HTML Academy](https://htmlacademy.ru).
 
