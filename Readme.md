@@ -1,5 +1,5 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
-Верстка интернет-магазина, сборка написана на Grunt.
+Верстка интернет-магазина, сборка написана на Grunt. Адаптивный.
 ---
 
 ### Инструкция по запуску
