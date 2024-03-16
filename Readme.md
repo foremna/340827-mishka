@@ -19,6 +19,9 @@ For task automation, I use the **Grunt** tool, which significantly simplifies th
 ### Cross-browser Compatibility
 My project has been thoroughly tested on various browsers, including Chrome, Firefox, Safari, Edge, and Internet Explorer 11, to ensure consistent quality display on all platforms.
 
+### Pixel Perfect Design
+The design of my project is pixel perfect, ensuring precise alignment and fidelity to the original visual layout.
+
 ### Font
 For textual content, I use the *Open Sans* font, which ensures readability and a pleasant appearance for my store.
 
