@@ -31,8 +31,9 @@ My *"Teddy Bear"* project has successfully passed over 100 protection criteria a
 ## Running Instructions
 
 1. Download my project to your computer.
-2. Install **Grunt**. If you're using Windows, run the command `npm install -g grunt-cli`, for MacOS run `sudo npm install -g grunt-cli`.
-3. Open the terminal, navigate to the project folder, and run the build by entering the command `npm run build && grunt serve`.
+2. Open the terminal, navigate to the project folder and entering the command `npm i`
+3. Install **Grunt**. If you're using Windows, run the command `npm install -g grunt-cli`, for MacOS run `sudo npm install -g grunt-cli`.
+4. Open the terminal, navigate to the project folder, and run the build by entering the command `npm run build && grunt serve`.
 
 Now you're ready to enjoy the beauty and functionality of my *"Teddy Bear"* online store
 
